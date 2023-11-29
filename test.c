@@ -17,10 +17,10 @@ main(){
     scanf("%d", &c);
     
     if (c == 1)
-     printf("%0.f", add(a,b));
+     printf("%f", add(a,b));
     else if(c == 2)
-     printf("%0.f", min(a,b));
+     printf("%f", min(a,b));
     else if(c == 3)
-     printf("%0.f", pow(a,b));
+     printf("%f", pow(a,b));
 
 }
