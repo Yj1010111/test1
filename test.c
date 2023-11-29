@@ -1,23 +1,27 @@
 #include<stdio.h>
-int add(int x,int y){
+#include<math.h>
+float add(float x,float y){
     return x+y;
 }
-int min(int x,int y){
+float min(float x,float y){
     return x-y;
 }
-int re(int x,int y){
-    return x%y;
+float fmodf(float x,float y){
+    return fmod(x,y);
 }
 main(){
-    int a,b,c;
+    int c;
+    float a,b;
     printf("숫자를 입력하시오.");
-    scanf("%d %d", &a, &b);
+    scanf("%f %f", &a, &b);
+    
     printf("1.더하기 2. 빼기 3. 나머지 구하기");
     scanf("%d", &c);
-    if(c == 1)
-     printf("%d", add(a,b));
+    
+    if (c == 1)
+     printf("%f", add(a,b));
     else if(c == 2)
-     printf("%d", min(a,b));
+     printf("%f", min(a,b));
     else if(c == 3)
-     printf("%d", re(a,b));
+     printf("%f", fmodf(a,b));
 }
